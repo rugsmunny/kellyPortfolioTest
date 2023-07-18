@@ -1,0 +1,92 @@
+$primary-color: #ffd700;
+
+@import 'animate.css';
+@import '~loaders.css/src/animations/pacman.scss';
+
+// @font-face {
+//   font-family: 'Helvetica Neue';
+//   src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
+// }
+
+@font-face {
+  font-family: 'La Belle Aurore';
+  src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+}
+
+input,
+textarea{
+  font-family: 'Helvetica Neue';
+}
+
+.loader-active{
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
+}
+
+/* For tablets and small desktops */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* CSS rules for tablets and small desktop screens */
+  .contact-form {
+    margin-top: 250px;
+  }
+  .map-wrap {
+    height: 300px;
+  }
+  .home-page .text-zone {
+    left: 5%;
+    top: 60%;
+    width: 70%;
+  }
+  .container {
+    height: 80%;
+  }
+  .portfolio-page {
+    padding-left: 50px;
+    padding-right: 25px;
+    .image-box {
+      flex: 1 1 30%;
+      max-width: calc(33.33% - 10px);
+    }
+  }
+}
+
+/* For mobile phones */
+@media screen and (max-width: 767px) {
+  /* CSS rules for mobile screens */
+  .contact-form {
+    margin-top: 150px;
+  }
+  .map-wrap {
+    height: 250px;
+  }
+  .home-page .text-zone {
+    left: 2%;
+    top: 60%;
+    width: 90%;
+  }
+  .container {
+    height: 70%;
+  }
+  .portfolio-page {
+    padding-left: 20px;
+    padding-right: 10px;
+    .image-box {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+}
